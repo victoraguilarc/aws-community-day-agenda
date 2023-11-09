@@ -1,2 +1,2 @@
 
-export const eventDay = '2023-11-08';
+export const eventDay = '2023-11-09';

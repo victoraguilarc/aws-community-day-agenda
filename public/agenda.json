@@ -249,56 +249,48 @@
       {
         "title": "¿Cómo transformar tu empresa en Cloud Native?",
         "slug": "MPN201",
-        "speaker": "Franco Martin 🇦🇷",
-        "abstract": "",
+        "speaker": "Jesús Guadalupe Briones Durán 🇲🇽",
+        "abstract": "Hace años que el Cloud llegó a México y desde entonces hemos escuchado términos como DevOps, Serverless y Containers. ¿Cómo logramos llegar a tener una empresa Cloud Native y aprovechar todo el potencial del Cloud? Les platicaré sobre las fases de adopción, sus principales retos y como afrontarlos",
         "start": "11:00",
         "end": "11:45"
       },
       {
         "title": "Aplicando Housekeeping en AWS",
         "slug": "MPN202",
-        "speaker": "Franco Martin 🇦🇷",
-        "abstract": "",
+        "speaker": "Alain Diaz 🇨🇱 🇨🇺",
+        "abstract": "¿Por qué no aprendemos de las malas prácticas? Una de las principales dificultades que encontramos durante nuestras operaciones en las infraestructuras Cloud es el desorden y olvido de recursos, lo cual atenta paulatinamente con mantener una infraestructura eficiente y limpia.",
         "start": "11:50",
         "end": "12:35"
       },
       {
-        "title": "PPN102 - Transfórmate en el mejor junior",
-        "slug": "PPN105",
-        "speaker": "Franco Martin 🇦🇷",
-        "abstract": "",
-        "start": "12:40",
-        "end": "13:25"
+        "title": "Todos somos responsables de la Seguridad",
+        "slug": "MPN204",
+        "speaker": "Nelson Navarrete 🇸🇻",
+        "abstract": "En esta charla, exploraremos cómo todos, desde desarrolladores hasta administradores de sistemas, desempeñan un papel fundamental en la seguridad de las aplicaciones y los datos en la nube. Descubriremos cómo los servicios de AWS pueden ser una parte integral de su estrategia de seguridad.",
+        "start": "13:30",
+        "end": "14:15"
       },
       {
-        "title": "PPN102 - Transfórmate en el mejor junior",
-        "slug": "PPN105",
-        "speaker": "Franco Martin 🇦🇷",
-        "abstract": "",
+        "title": "AWS sin Ataduras: Reasignando recursos AWS para enfrentar una adquisición empresarial",
+        "slug": "MPN206",
+        "speaker": "Luis Gerardo Guerra Garrido 🇲🇽",
+        "abstract": "En el contexto de adquisiciones empresariales, explora la tarea crítica de separar estratégicamente los recursos de AWS después de adquirir una unidad de negocio. El desacoplamiento busca permitir operaciones independientes y escalabilidad, impulsado por la agilidad, eficiencia de costos y administración simplificada. Se destacan consideraciones clave como identificación de dependencias, seguridad y optimización de recursos. Lograr un desacoplamiento efectivo ayuda a mitigar riesgos, minimizar interrupciones y aprovechar todo el potencial de la nube.",
         "start": "14:20",
         "end": "15:05"
       },
       {
-        "title": "PPN102 - Transfórmate en el mejor junior",
-        "slug": "PPN105",
-        "speaker": "Franco Martin 🇦🇷",
-        "abstract": "",
-        "start": "15:10",
-        "end": "16:00"
-      },
-      {
-        "title": "PPN102 - Transfórmate en el mejor junior",
-        "slug": "PPN105",
-        "speaker": "Franco Martin 🇦🇷",
-        "abstract": "",
+        "title": "AWS Well-Architected Framework: Aproveche el marco de la buena arquitectura de AWS para obtener resultados óptimos",
+        "slug": "MPN205",
+        "speaker": "Hector David Martinez Montilla 🇲🇽 🇻🇪",
+        "abstract": "¡Hola a todos! Como Cloud Engineer de AWS, les guiaré a través del emocionante mundo del Well-Architected Framework. Descubriremos cómo construir, asegurar y hacer que sus aplicaciones en la nube sean sólidas, seguras, eficientes y económicas. ¡Prepárense para despegar hacia el éxito en la nube!",
         "start": "16:05",
         "end": "16:50"
       },
       {
-        "title": "PPN102 - Transfórmate en el mejor junior",
-        "slug": "PPN105",
-        "speaker": "Franco Martin 🇦🇷",
-        "abstract": "",
+        "title": "Scrum y el Product Owner: Navegando el Universo del Producto Digital",
+        "slug": "MPN101",
+        "speaker": "Jessica Azcona 🇲🇽",
+        "abstract": "¿Por qué el término dueño del producto? ¿Cuál es la importancia de las constantes preguntas como ¿Cómo van? en el proceso? Y una vez que un sprint finaliza, ¿qué sigue? Sumérgete en la vista integral del producto, comprendiendo su ciclo de vida más allá del desarrollo.",
         "start": "16:55",
         "end": "17:40"
       }
