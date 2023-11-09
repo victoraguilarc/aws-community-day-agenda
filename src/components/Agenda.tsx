@@ -202,7 +202,7 @@ export function Agenda({agendaTracks}: AgendaProps) {
           <h2 className="font-poppins text-3xl text-center font-bold tracking-tighter text-white sm:text-5xl sm:text-left">
             Agenda
           </h2>
-          <p className="mt-4 font-display text-xl tracking-tight text-white">
+          <p className="mt-4 font-display text-xl tracking-tight text-white leading-6">
             Únete a nosotros en el AWS Community Day para explorar tendencias y prácticas en AWS. Con charlas, estudios de caso, talleres y oportunidades de networking, en 4 tracks diferentes.
           </p>
         </div>
