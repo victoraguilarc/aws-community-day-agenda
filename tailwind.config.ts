@@ -32,12 +32,14 @@ export default {
       },
       maxWidth: {
         '2xl': '40rem',
+        '8xl': '85rem',
       },
       colors: {
         'aws-gray': '#232f3e',
         'aws-pink': '#ff007b',
         'aws-turquoise': '#56C0A7',
-        'aws-gray-400': '#4b5563',
+        'aws-light-purple': '#C4B5FD',
+        'aws-gray-400': '#3B4C5A',
         'aws-purple': '#7928CA',
         'aws-blue': '#00a3ff',
         'aws-yellow': '#FF9900',

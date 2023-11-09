@@ -16,6 +16,7 @@ interface Speech {
   abstract: string;
   start: string;
   end: string;
+  slug: string | null;
 }
 interface Track {
   name: string;
@@ -85,7 +86,7 @@ function ScheduleTabbed({agendaTracks}: AgendaProps) {
                 )}
               >
                 <Tab className="p-5">
-                  <span className="text-xl font-semibold text-aws-yellow leading-7 text-center font-exo block">
+                  <span className="text-lg font-semibold text-aws-yellow leading-7 text-center font-exo block">
                     {track.name}
                   </span>
                 </Tab>
@@ -111,20 +112,10 @@ function ScheduleTabbed({agendaTracks}: AgendaProps) {
 function TrackName({ name }: { name: string }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold tracking-tight text-aws-yellow leading-7 text-center font-exo block h-[3rem]">
+      <h3 className="text-xl font-semibold tracking-tight text-aws-yellow leading-7 text-center font-exo block h-[2rem]">
         {name}
       </h3>
     </>
-  )
-}
-function TrackNameTab({ name }: { name: string }) {
-  return (
-    <Tab className="ui-not-focus-visible:outline-none">
-    {/*//   <span className="absolute inset-0" />*/}
-      <h3 className="text-2xl font-semibold tracking-tight text-aws-yellow leading-7 text-center font-exo block h-[3rem]">
-        {'name'}
-      </h3>
-    </Tab>
   )
 }
 
@@ -147,16 +138,22 @@ function SpeechSlots({ track, className }: { track: Track; className?: string })
                 key={generateKey(speech.title)}
                 aria-label={`${speech.title} - ${speech.speaker} / ${speech.start} - ${speech.end}`}
                 className={clsx(
-                    'px-5 py-6 mt-0',
-                    isNotLastSpeech ? 'border-b-2 border-aws-gray/50 border-dashed' : '',
+                    'px-4 py-3 mt-0',
+                    isNotLastSpeech ? 'border-b-2 border-aws-gray border-dashed' : '',
                     isOnGoingSpeech ? 'bg-aws-purple' : 'bg-aws-gray-400',
                 )}
             >
-              <h4 className="text-lg font-semibold tracking-tight text-white leading-6">
+              {speech.slug && (
+                  <span className="inline-flex items-center rounded-md bg-green-500/10 px-1.5 py-0.5 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20">
+                    {speech.slug}
+                  </span>
+              )}
+              <h4 className="mt-2 text-base font-semibold tracking-tight text-white leading-6">
                 {speech.speaker}
               </h4>
               <p className={clsx(
-                  "mt-1 tracking-tight text-aws-turquoise",
+                  "mt-1 tracking-tight font-exo text-aws-light-purple" +
+                  " leading-4",
                     isOnGoingSpeech ? 'text-white' : '',
               )}>
                 {speech.title}
@@ -182,7 +179,7 @@ function SpeechSlots({ track, className }: { track: Track; className?: string })
 
 function ScheduleStatic({agendaTracks}: AgendaProps) {
   return (
-    <div className="hidden lg:grid lg:grid-cols-4 lg:gap-x-8">
+    <div className="hidden lg:grid lg:grid-cols-5 lg:gap-x-3">
       {agendaTracks.map((track) => (
         <section key={generateKey('track.name')}>
           <TrackName name={track.name} />

@@ -1,60 +1,306 @@
 [
   {
-    "name": "Primeros Pasos en la Nube",
-    "summary": "The first day of the conference is focused on dark patterns for ecommerce.",
+    "name": "General: Actividades",
     "speeches": [
       {
-        "title": "The dark patterns of ecommerce",
-        "speaker": "Steven McHail",
-        "abstract": "Not so one-time payments",
-        "start": "09:00",
-        "end": "11:00"
+        "title": "Conferencia magistral",
+        "slug": null,
+        "speaker": "Memo Döring",
+        "abstract": "Acompáñanos a la conferencia magistral de Memo Döring, Head of Developer Relations LATAM en AWS para descubrir como la nube está transformando las organizaciones de todos los sectores y tamaños.",
+        "start": "09:30",
+        "end": "10:30"
       },
       {
-        "title": "The dark patterns of ecommerce",
-        "speaker": "Steven McHail",
-        "abstract": "Not so one-time payments",
-        "start": "21:00",
-        "end": "23:59"
+        "title": "AWS Certification Lounge - Cloud Practitioner",
+        "slug": null,
+        "speaker": "Sala P3 - Gilberto Canales 🇲🇽",
+        "abstract": "¡Únete a nuestra sesión de entrenamiento AWS Cloud Practitioner! En 45 minutos, sumérgete en los conceptos clave de AWS y la nube. Aprende sobre servicios, casos de uso, beneficios de AWS y también conoce las herramientas disponibles para que te puedas preparar de la mejor manera y logres certificarte como AWS Certified Cloud Practitioner. Participa en la sesión de preguntas y respuestas. ¡Todos los niveles son bienvenidos! ¡Te esperamos para aprender!",
+        "start": "11:00",
+        "end": "11:45"
+      },
+      {
+        "title": "Almuerzo",
+        "slug": null,
+        "speaker": "Expo",
+        "abstract": "Acompáñanos a comer en el transcurso del día. Toma tu box lunch, siéntate, relájate y disfruta de tus alimentos en la expo o en alguna sala. Por favor, tira tu basura en el bote más cercano.",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "title": "AWS Certification Lounge - Solutions Architect",
+        "slug": null,
+        "speaker": "Sala P3 - Gilberto Canales 🇲🇽",
+        "abstract": "¡No te pierdas nuestra sesión de taller para la certificación AWS Solutions Architect Associate! En 45 minutos aprende sobre las habilidades que son requeridas para diseñar arquitecturas en AWS. Aprende sobre mejores prácticas, patrones de diseño y servicios clave. Participa en la sesión de preguntas y respuestas. No importa si eres nuevo o tienes experiencia, ¡todos son bienvenidos! Únete a nosotros para una sesión enriquecedora y la oportunidad de aprender de los mejores mientras te preparas para la certificación AWS Solutions Architect Associate. ¡Te esperamos!",
+        "start": "14:00",
+        "end": "14:45"
+      },
+      {
+        "title": "AWS Certification Lounge - Cloud Practitioner",
+        "slug": null,
+        "speaker": "Sala P3 - Gilberto Canales 🇲🇽",
+        "abstract": "¡Únete a nuestra sesión de entrenamiento AWS Cloud Practitioner! En 45 minutos, sumérgete en los conceptos clave de AWS y la nube. Aprende sobre servicios, casos de uso, beneficios de AWS y también conoce las herramientas disponibles para que te puedas preparar de la mejor manera y logres certificarte como AWS Certified Cloud Practitioner. Participa en la sesión de preguntas y respuestas. ¡Todos los niveles son bienvenidos! ¡Te esperamos para aprender!",
+        "start": "17:00",
+        "end": "17:45"
+      },
+      {
+        "title": "Fotografía grupal",
+        "slug": null,
+        "speaker": "Sala principal",
+        "abstract": "Justo antes de iniciar la sesión de cierre y networking, acompánamos a tomar la foto grupal del evento.",
+        "start": "18:00",
+        "end": "19:00"
+      },
+      {
+        "title": "Networking de cierre",
+        "slug": null,
+        "speaker": "Expo",
+        "abstract": "Acompáñanos a brindar el cierre de un exitoso evento y a conectar con otras personas interesadas en la nube.",
+        "start": "19:00",
+        "end": "20:00"
+      }
+    ]
+  },
+  {
+    "name": "Primeros Pasos en la Nube",
+    "speeches": [
+      {
+        "title": "Transfórmate en el mejor junior",
+        "slug": "PPN102",
+        "speaker": "Franco Martin 🇦🇷",
+        "abstract": "Ya consegui mi primer trabajo, ¿y ahora? En esta charla les voy a contar algunos principios que les van a ayudar a crecer y prepararse para dar el próximo paso en su carrera profesional.",
+        "start": "11:50",
+        "end": "12:35"
+      },
+      {
+        "title": "Explorando la Nube, primeros pasos de la Transformación Digital",
+        "slug": "PPN106",
+        "speaker": "Arturo Gallart 🇲🇽",
+        "abstract": "En esta charla, exploraremos cómo la adopción de la nube puede impulsar nuestras estrategias de transformación digital. Descubriremos tanto los beneficios como los desafíos que nos esperan en estos primeros pasos hacia la nube y en este viaje hacia un futuro más ágil, eficiente y mejor conectado",
+        "start": "12:40",
+        "end": "13:25"
+      },
+      {
+        "title": "¡A toda marcha! Tu primera página web con AWS Amplify",
+        "slug": "PPN201",
+        "speaker": "Heberto Cordero 🇲🇽",
+        "abstract": "Imagina poder construir y desplegar páginas web no solo de manera rápida, sino también de manera divertida y sencilla, hoy mismo puedes tener tu propia página web en menos de 30 minutos, digamos adios, a los métodos tradicionales y demos la bienvenida a AWS Amplify",
+        "start": "13:30",
+        "end": "14:15"
+      },
+      {
+        "title": "Comienzos en la nube como estudiante",
+        "slug": "PPN103",
+        "speaker": "Diego Antonio Lopez Ruelas 🇲🇽 y Cristian Salazar Bautista 🇲🇽",
+        "abstract": "¿Tienes interés en el mundo que AWS ofrece, pero tienes dudas sobre si vale la pena o no sabes qué es AWS? En nuestra charla mencionaremos lo que puedes esperar de este mundo tan maravilloso, lo grande que es esta comunidad y el cómo aprender sobre AWS puede ayudarte en tu carrera como estudiante",
+        "start": "14:20",
+        "end": "15:05"
+      },
+      {
+        "title": "Convirtiéndome en un super PRO en el campo",
+        "slug": "PPN104",
+        "speaker": "Sergio Macias 🇲🇽",
+        "abstract": "Ya terminaste tu carrera y te preguntas ¿qué sigue? ¿No es muy claro en que debes de enfocarte?, ¡esta charla es para ti!",
+        "start": "15:10",
+        "end": "16:00"
+      },
+      {
+        "title": "Construyendo aplicaciones web escalables: Usando un enfoque serverless e infraestructura como código con CDK",
+        "slug": "PPN202",
+        "speaker": "Jürgen Anders Guerra Ramos 🇵🇪",
+        "abstract": "En esta ponencia, exploraremos el fascinante mundo de la construcción de aplicaciones web en AWS. Para ello aprenderemos cómo adoptar un enfoque serverless utilizando servicios como Lambda, S3 o DynamoDB, así como desplegar nuestra infraestructura como código (IaC) utilizando AWS CDK",
+        "start": "16:05",
+        "end": "16:50"
+      },
+      {
+        "title": "Entendiendo CI/CD desde la base",
+        "slug": "PPN105",
+        "speaker": "Marcos Cespere 🇦🇷",
+        "abstract": "¿Cuántas veces escuchamos CI/CD? ¿Es un buzzword o un concepto real? Voy a explicar de que se trata, que metodologías de trabajo lo soportan e impulsan y que tecnologías podemos aplicar para alcanzar su aplicación. Además de la teoría, veremos buenas practicas para mejorar el trabajo en equipo.",
+        "start": "16:55",
+        "end": "17:40"
       }
     ]
   },
   {
     "name": "Operaciones en la Nube",
-    "summary": "The first day of the conference is focused on dark patterns for ecommerce.",
     "speeches": [
       {
-        "title": "The dark patterns of ecommerce",
-        "speaker": "Steven McHail",
-        "abstract": "Not so one-time payments",
-        "start": "09:00",
-        "end": "11:00"
+        "title": "Usar Lambda@Edge para habilitar pruebas canario, balanceo de cargas y despliegues verde/azul en Amazon CloudFront",
+        "slug": "OEN301",
+        "speaker": "David Sol 🇲🇽",
+        "abstract": "A través de Lambda@Edge desarrollamos un mecanismo para hacer pruebas canario, balanceo de cargas y despliegues verde/azul con dos orígenes distintos para la misma distribución de Amazon CloudFront. Hablaremos a detalle de los retos técnicos y como los superamos para resolver este requerimiento",
+        "start": "11:00",
+        "end": "11:45"
+      },
+      {
+        "title": "De código a la nube: Optimiza tu CI/CD para tus aplicaciones serverless",
+        "slug": "OEN201",
+        "speaker": "Andrés Moreno 🇲🇽 🇺🇸",
+        "abstract": "Como optimizar tu CI/CD para hacer verificaciones pre-despliegue (pruebas unitarias, linting, etc.), desplegar la aplicación con IaC y hacer validaciones post-despliegue (pruebas de contrato, de integración, etc.) y ver como usar los mismos flujos para crear ambientes efímeros para los desarrolladores",
+        "start": "11:50",
+        "end": "12:35"
+      },
+      {
+        "title": "Dominando Terraform: Escalabilidad y Flexibilidad en AWS",
+        "slug": "OEN202",
+        "speaker": "Edgar Omar Reyes Cano 🇲🇽",
+        "abstract": "En esta charla, te presentaré parte de mi aprendizaje trabajando con AWS y Terraform. Descubre cómo una metodología escalable y adaptable puede facilitar tu forma de trabajar. Con una demo, aprenderás cómo esta metodología simplifica la colaboración y prepara el terreno para ir evolucionando tu IaC",
+        "start": "12:40",
+        "end": "13:25"
+      },
+      {
+        "title": "Protegiendo tus aplicaciones durante el ciclo de vida de desarrollo",
+        "slug": "OEN203",
+        "speaker": "David Avila 🇨🇴",
+        "abstract": "Por definir",
+        "start": "14:20",
+        "end": "15:05"
+      },
+      {
+        "title": "Consejos de optimización y rendimiento de AWS Lambda",
+        "slug": "OEN204",
+        "speaker": "Lino Espinoza 🇵🇪",
+        "abstract": "Voy a hablar sobre cómo optimizar adecuadamente las funciones Lambda para obtener y mejorar el rendimiento, a través de conceptos importantes sobre cómo funciona AWS Lambda y consejos que surgen de la experiencia práctica",
+        "start": "15:10",
+        "end": "16:00"
+      },
+      {
+        "title": "Adoptar Kubernetes de forma sencilla con EKS Blueprints",
+        "slug": "OEN205",
+        "speaker": "Alonso Parasxidis Moreno 🇲🇽",
+        "abstract": "Esta charla trata sobre cómo tener un clúster de Kubernetes personalizable y listo para producción desde cero utilizando una herramienta respaldada por la comunidad y comenzar a implementar sus cargas de trabajo utilizando prácticas de GitOps, así como a administrar complementos, que le permitirán ampliar las capacidades funcionales de su clúster",
+        "start": "16:05",
+        "end": "16:50"
+      },
+      {
+        "title": "Patrones avanzados de IAM, llevando AWS mas allá de la nube con IAM Anywhere y Amazon Verified Permissons",
+        "slug": "OEN302",
+        "speaker": "Franchesco Romero y Luis Ordaz 🇲🇽",
+        "abstract": "Experiencias y estrategias para llevar IAM más allá de los servicios de AWS. Ya sea integrando IAM de AWS con otros proveedores de nube o creando un sistema unificado de gestión de identidad en redes privadas. Asi como la creacion de un ambiente Zero-Trust usando Amazon Verified Permissions",
+        "start": "16:55",
+        "end": "17:40"
       }
     ]
   },
   {
     "name": "AI/ML",
-    "summary": "The first day of the conference is focused on dark patterns for ecommerce.",
     "speeches": [
       {
-        "title": "The dark patterns of ecommerce",
-        "speaker": "Steven McHail",
-        "abstract": "Not so one-time payments",
-        "start": "09:00",
-        "end": "11:00"
+        "title": "Potenciando a Alexa con AWS: Explorando la Magia detrás Amazon Alexa",
+        "slug": "AIM201",
+        "speaker": "Ethel Emmelaine González Sánchez 🇲🇽",
+        "abstract": "Descubre cómo maximizar el potencial de Alexa mediante AWS. Exploraremos cómo servicios como Lambda, S3 y DynamoDB pueden fortalecer las capacidades de tu asistente virtual y brindar experiencias más enriquecedoras a los usuarios",
+        "start": "11:00",
+        "end": "11:45"
+      },
+      {
+        "title": "¿Y qué diablos es Gen AI y cómo lo integro con AWS?",
+        "slug": "AIM101",
+        "speaker": "Fabiana Serangelli 🇲🇽 🇻🇪",
+        "abstract": "Únete a la próxima ola de innovación tecnológica con Gen AI en AWS. Aprende qué es Gen AI y descubre cómo lo podemos integrar con las herramientas disponibles de Machine Learning en AWS",
+        "start": "11:50",
+        "end": "12:35"
+      },
+      {
+        "title": "Hadoop: HDFS y la propuesta de AWS",
+        "slug": "AIM205",
+        "speaker": "Ismael Porto 🇲🇽",
+        "abstract": "¿Alguna vez se ha preguntado cómo las grandes empresas almacenan grandes cantidades de datos manteniendo al mismo tiempo un rendimiento óptimo en sus aplicaciones? Hadoop es la respuesta. Gracias a su enfoque de almacenar grandes cantidades de datos en hardware rentable, varias empresas lo han adoptado como su solución de big data",
+        "start": "12:40",
+        "end": "13:25"
+      },
+      {
+        "title": "Generación del eCommerce desde cero hasta la IA",
+        "slug": "AIM202",
+        "speaker": "Ivan Castañeda 🇲🇽",
+        "abstract": "¡Revolucionario Caso de Éxito en Logística para eCommerce! Desde la creación que va de la asignación de pedidos hasta la recolección y entrega puntual al cliente, para dar inicio a la revolución con Inteligencia Artificial. ¡Eleva tu logística a un nuevo nivel!",
+        "start": "13:30",
+        "end": "14:15"
+      },
+      {
+        "title": "Impulsando la Productividad del Desarrollador con Amazon CodeWhisperer",
+        "slug": "AIM102",
+        "speaker": "Marco Cornejo 🇲🇽",
+        "abstract": "Descubre cómo impulsar tu productividad con Amazon CodeWhisperer, la herramienta basada en IA Generativa de AWS. Exploraremos sugerencias de código en tiempo real, superación de desafíos con APIs y fortalecimiento de la seguridad. ¡Lleva tu desarrollo al siguiente nivel con el poder de la IA!",
+        "start": "14:20",
+        "end": "15:05"
+      },
+      {
+        "title": "DevOps Runbooks usando Jupyter notebooks en AWS Sagemaker",
+        "slug": "AIM203",
+        "speaker": "Yslen González 🇲🇽",
+        "abstract": "En DevOps se trabaja con scripts de automatización con diferentes propósitos. ¿Pero qué pasa cuando no se tiene una guía comprensible de lo que se necesita para ejecutarlos? Con Jupyter notebooks se puede colaborar de mejor manera y sobre todo, obtener mejor visibilidad de los outputs en cada paso",
+        "start": "15:10",
+        "end": "16:00"
+      },
+      {
+        "title": "Potenciando los LLMs con RAG y Atlas Vector Search",
+        "slug": "AIM301",
+        "speaker": "Héctor Daniel Rodríguez Arreola 🇲🇽",
+        "abstract": "Los LLMs han catalizado una era de innovación, permitiéndonos elevar los productos tecnológicos a niveles que rozan lo mágico. A pesar de su impacto transformador, estos modelos no están libres de desafíos y se enfrentan a limitaciones como alucinaciones, información desactualizada, la falta de acceso a datos específicos de los usuarios, y límites en el procesamiento de tokens. En esta presentación, descubrirás cómo las arquitecturas de Retrieval-Augmented Generation (RAG) y MongoDB Atlas Vector Search están trazando nuevos horizontes para los LLMs, evolucionando hacia modelos de lenguaje más precisos, conscientes del contexto y dinámicos",
+        "start": "16:05",
+        "end": "16:50"
       }
     ]
   },
   {
     "name": "Mejores Prácticas en la Nube",
-    "summary": "The first day of the conference is focused on dark patterns for ecommerce.",
     "speeches": [
       {
-        "title": "The dark patterns of ecommerce",
-        "speaker": "Steven McHail",
-        "abstract": "Not so one-time payments",
-        "start": "09:00",
-        "end": "11:00"
+        "title": "¿Cómo transformar tu empresa en Cloud Native?",
+        "slug": "MPN201",
+        "speaker": "Franco Martin 🇦🇷",
+        "abstract": "",
+        "start": "11:00",
+        "end": "11:45"
+      },
+      {
+        "title": "Aplicando Housekeeping en AWS",
+        "slug": "MPN202",
+        "speaker": "Franco Martin 🇦🇷",
+        "abstract": "",
+        "start": "11:50",
+        "end": "12:35"
+      },
+      {
+        "title": "PPN102 - Transfórmate en el mejor junior",
+        "slug": "PPN105",
+        "speaker": "Franco Martin 🇦🇷",
+        "abstract": "",
+        "start": "12:40",
+        "end": "13:25"
+      },
+      {
+        "title": "PPN102 - Transfórmate en el mejor junior",
+        "slug": "PPN105",
+        "speaker": "Franco Martin 🇦🇷",
+        "abstract": "",
+        "start": "14:20",
+        "end": "15:05"
+      },
+      {
+        "title": "PPN102 - Transfórmate en el mejor junior",
+        "slug": "PPN105",
+        "speaker": "Franco Martin 🇦🇷",
+        "abstract": "",
+        "start": "15:10",
+        "end": "16:00"
+      },
+      {
+        "title": "PPN102 - Transfórmate en el mejor junior",
+        "slug": "PPN105",
+        "speaker": "Franco Martin 🇦🇷",
+        "abstract": "",
+        "start": "16:05",
+        "end": "16:50"
+      },
+      {
+        "title": "PPN102 - Transfórmate en el mejor junior",
+        "slug": "PPN105",
+        "speaker": "Franco Martin 🇦🇷",
+        "abstract": "",
+        "start": "16:55",
+        "end": "17:40"
       }
     ]
   }
