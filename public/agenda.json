@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Primeros Pasos en la Nube",
+    "summary": "The first day of the conference is focused on dark patterns for ecommerce.",
+    "speeches": [
+      {
+        "title": "The dark patterns of ecommerce",
+        "speaker": "Steven McHail",
+        "abstract": "Not so one-time payments",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "title": "The dark patterns of ecommerce",
+        "speaker": "Steven McHail",
+        "abstract": "Not so one-time payments",
+        "start": "21:00",
+        "end": "23:00"
+      }
+    ]
+  },
+  {
+    "name": "Operaciones en la Nube",
+    "summary": "The first day of the conference is focused on dark patterns for ecommerce.",
+    "speeches": [
+      {
+        "title": "The dark patterns of ecommerce",
+        "speaker": "Steven McHail",
+        "abstract": "Not so one-time payments",
+        "start": "09:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "name": "AI/ML",
+    "summary": "The first day of the conference is focused on dark patterns for ecommerce.",
+    "speeches": [
+      {
+        "title": "The dark patterns of ecommerce",
+        "speaker": "Steven McHail",
+        "abstract": "Not so one-time payments",
+        "start": "09:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "name": "Mejores Prácticas en la Nube",
+    "summary": "The first day of the conference is focused on dark patterns for ecommerce.",
+    "speeches": [
+      {
+        "title": "The dark patterns of ecommerce",
+        "speaker": "Steven McHail",
+        "abstract": "Not so one-time payments",
+        "start": "09:00",
+        "end": "11:00"
+      }
+    ]
+  }
+]
