@@ -2,7 +2,7 @@
 
 import { v4 as uuidv4 } from 'uuid';
 
-import { useEffect, useState } from 'react'
+import {ReactNode, useEffect, useState} from 'react'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
@@ -70,32 +70,25 @@ function ScheduleTabbed({agendaTracks}: AgendaProps) {
   return (
     <Tab.Group
       as="div"
-      className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden"
+      className="mx-auto grid max-w-2xl grid-cols-1 sm:grid-cols-2 lg:hidden"
       vertical={tabOrientation === 'vertical'}
     >
-      <Tab.List className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
+      <Tab.List className="-mx-4 flex gap-x-4 overflow-x-auto px-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8 mb-2">
         {({ selectedIndex }) => (
           <>
             {agendaTracks.map((track, trackIndex) => (
               <div
-                key={generateKey('track.tab')}
+                key={track.name}
                 className={clsx(
-                  'relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0',
+                  'relative w-auto flex-none',
                   trackIndex !== selectedIndex && 'opacity-70',
                 )}
               >
-                <TrackSummary
-                    track={track}
-                  // track={{
-                  //   ...track,
-                  //   track: (
-                  //     <Tab className="ui-not-focus-visible:outline-none">
-                  //       <span className="absolute inset-0" />
-                  //       {track.name}
-                  //     </Tab>
-                  //   ),
-                  // }}
-                />
+                <Tab className="p-5">
+                  <span className="text-xl font-semibold text-aws-yellow leading-7 text-center font-exo block">
+                    {track.name}
+                  </span>
+                </Tab>
               </div>
             ))}
           </>
@@ -115,13 +108,23 @@ function ScheduleTabbed({agendaTracks}: AgendaProps) {
   )
 }
 
-function TrackSummary({ track }: { track: Track }) {
+function TrackName({ name }: { name: string }) {
   return (
     <>
       <h3 className="text-2xl font-semibold tracking-tight text-aws-yellow leading-7 text-center font-exo block h-[3rem]">
-        {track.name}
+        {name}
       </h3>
     </>
+  )
+}
+function TrackNameTab({ name }: { name: string }) {
+  return (
+    <Tab className="ui-not-focus-visible:outline-none">
+    {/*//   <span className="absolute inset-0" />*/}
+      <h3 className="text-2xl font-semibold tracking-tight text-aws-yellow leading-7 text-center font-exo block h-[3rem]">
+        {'name'}
+      </h3>
+    </Tab>
   )
 }
 
@@ -181,8 +184,8 @@ function ScheduleStatic({agendaTracks}: AgendaProps) {
   return (
     <div className="hidden lg:grid lg:grid-cols-4 lg:gap-x-8">
       {agendaTracks.map((track) => (
-        <section key={generateKey(track.name)}>
-          <TrackSummary track={track} />
+        <section key={generateKey('track.name')}>
+          <TrackName name={track.name} />
           <SpeechSlots track={track} className="mt-10" />
         </section>
       ))}
@@ -199,7 +202,7 @@ export function Agenda({agendaTracks}: AgendaProps) {
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-poppins text-4xl font-bold tracking-tighter text-white sm:text-5xl">
+          <h2 className="font-poppins text-3xl text-center font-bold tracking-tighter text-white sm:text-5xl sm:text-left">
             Agenda
           </h2>
           <p className="mt-4 font-display text-xl tracking-tight text-white">
