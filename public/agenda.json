@@ -3,7 +3,7 @@
     "name": "General: Actividades",
     "speeches": [
       {
-        "title": "Conferencia magistral",
+        "title": "Conferencia magistral ✨",
         "slug": null,
         "speaker": "Memo Döring",
         "abstract": "Acompáñanos a la conferencia magistral de Memo Döring, Head of Developer Relations LATAM en AWS para descubrir como la nube está transformando las organizaciones de todos los sectores y tamaños.",
@@ -19,7 +19,7 @@
         "end": "11:45"
       },
       {
-        "title": "Almuerzo",
+        "title": "Almuerzo 🥪 + 🥤",
         "slug": null,
         "speaker": "Expo",
         "abstract": "Acompáñanos a comer en el transcurso del día. Toma tu box lunch, siéntate, relájate y disfruta de tus alimentos en la expo o en alguna sala. Por favor, tira tu basura en el bote más cercano.",
@@ -43,7 +43,7 @@
         "end": "17:45"
       },
       {
-        "title": "Fotografía grupal",
+        "title": "Fotografía grupal 📸",
         "slug": null,
         "speaker": "Sala principal",
         "abstract": "Justo antes de iniciar la sesión de cierre y networking, acompánamos a tomar la foto grupal del evento.",
@@ -51,7 +51,7 @@
         "end": "19:00"
       },
       {
-        "title": "Networking de cierre",
+        "title": "Networking de cierre 🍹",
         "slug": null,
         "speaker": "Expo",
         "abstract": "Acompáñanos a brindar el cierre de un exitoso evento y a conectar con otras personas interesadas en la nube.",

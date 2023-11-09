@@ -40,6 +40,7 @@ export default {
         'aws-turquoise': '#56C0A7',
         'aws-light-purple': '#C4B5FD',
         'aws-gray-400': '#3B4C5A',
+        'aws-gray-300': '#4F5D6E',
         'aws-purple': '#7928CA',
         'aws-blue': '#00a3ff',
         'aws-yellow': '#FF9900',

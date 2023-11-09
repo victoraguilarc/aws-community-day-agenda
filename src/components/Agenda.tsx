@@ -42,12 +42,17 @@ const generateKey = (prefix: string) => {
   return `${ prefix }_${ uuidv4() }`;
 }
 
-const isOnTime = (starting: Date, ending: Date): boolean => {
+const isOnTimeSpeech = (currentDate: Date, starting: Date, ending: Date): boolean => {
   const targetDate = new Date(`${eventDay}T00:00:00-06:00`);
   if (targetDate.getDay() < starting.getDay() || targetDate.getDay() > ending.getDay())
     return false;
-  const currentDate = new Date();
   return currentDate >= starting && currentDate <= ending;
+}
+const isPastTimeSpeech = (currentDate: Date, starting: Date, ending: Date): boolean => {
+  const targetDate = new Date(`${eventDay}T00:00:00-06:00`);
+  if (targetDate.getDay() < starting.getDay() || targetDate.getDay() > ending.getDay())
+    return false;
+  return currentDate > ending;
 }
 
 function ScheduleTabbed({agendaTracks}: AgendaProps) {
@@ -120,6 +125,13 @@ function TrackName({ name }: { name: string }) {
 }
 
 function SpeechSlots({ track, className }: { track: Track; className?: string }) {
+  const [currentDate, setCurrentDate] = useState(new Date());
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <ol
       role="list"
@@ -131,7 +143,8 @@ function SpeechSlots({ track, className }: { track: Track; className?: string })
       {track.speeches.map((speech, speechIndex) => {
         const speechStart = buildDateTime(speech.start);
         const speechFinish = buildDateTime(speech.end);
-        const isOnGoingSpeech = isOnTime(speechStart, speechFinish);
+        const isOnGoingSpeech = isOnTimeSpeech(currentDate, speechStart, speechFinish);
+        const isPastSpeech = isPastTimeSpeech(currentDate, speechStart, speechFinish);
         const isNotLastSpeech = speechIndex < track.speeches.length - 1;
         return (
             <li
@@ -141,6 +154,7 @@ function SpeechSlots({ track, className }: { track: Track; className?: string })
                     'px-4 py-3 mt-0',
                     isNotLastSpeech ? 'border-b-2 border-aws-gray border-dashed' : '',
                     isOnGoingSpeech ? 'bg-aws-purple' : 'bg-aws-gray-400',
+                    isPastSpeech ? 'bg-aws-gray-300' : '',
                 )}
             >
               {speech.slug && (
@@ -148,17 +162,26 @@ function SpeechSlots({ track, className }: { track: Track; className?: string })
                     {speech.slug}
                   </span>
               )}
-              <h4 className="mt-2 text-base font-semibold tracking-tight text-white leading-6">
+              <h4 className={
+                clsx(
+                    "mt-2 text-base font-semibold tracking-tight text-white leading-6",
+                    isPastSpeech ? 'line-through' : '',
+                )
+              }>
                 {speech.speaker}
               </h4>
               <p className={clsx(
                   "mt-1 tracking-tight font-exo text-aws-light-purple" +
                   " leading-4",
-                    isOnGoingSpeech ? 'text-white' : '',
+                  isOnGoingSpeech ? 'text-white' : '',
+                  isPastSpeech ? 'line-through' : '',
               )}>
                 {speech.title}
               </p>
-              <p className="mt-1 font-mono text-sm text-slate-200">
+              <p className={clsx(
+                  "mt-1 font-mono text-sm text-slate-200",
+                  isPastSpeech ? 'line-through' : '',
+              )}>
                 <time dateTime={`${speechStart}`}>
                   {`${prefixTime(speechStart.getHours())}:${prefixTime(speechStart.getMinutes())}`}
                 </time>{' '}
@@ -203,7 +226,15 @@ export function Agenda({agendaTracks}: AgendaProps) {
             Agenda
           </h2>
           <p className="mt-4 font-display text-xl tracking-tight text-white leading-6">
-            Únete a nosotros en el AWS Community Day para explorar tendencias y prácticas en AWS. Con charlas, estudios de caso, talleres y oportunidades de networking, en 4 tracks diferentes.
+            Desde las <span className="font-bold">08:00</span> hasta el cierre
+            <br/>
+            <br/>
+            Recolección de acreditación:
+            <span className="font-bold">&nbsp;&nbsp;Edificio Estoa - Piso B</span>
+            <br/>
+            <br/>
+            Para acceder a las diferentes salas, es importante recoger tu gafete de acreditación. <br/>
+            Recuerda que el registro previo es obligatorio.
           </p>
         </div>
       </Container>
